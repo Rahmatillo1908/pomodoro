@@ -202,7 +202,7 @@ a {
     content: "";
     position: absolute;
     left: calc(50% - 2px);
-    top: 20px;
+    top: 10px;
     width: 4px;
     height: 100%;
     background-color: white;
@@ -215,9 +215,10 @@ a {
     width: 400px;
     height: auto;
     padding: 15px 30px;
-    margin-top: 30px;
+    margin-top: 10px;
     border-radius: 20px;
     display: flex;
+    border-bottom: 2px solid white;
     flex-direction: column;
     gap: 20px;
     position: relative;
@@ -249,34 +250,105 @@ a {
 /*----------------------------- timer  ------------------------------ */
 
 .timer {
-    padding: 50px 50px 10px;
+    padding: 30px 50px 10px;
     text-align: center;
     width: 90%;
-    /* display: flex; */
+    height: auto;
+    position: relative;
 }
-.timer .timerImg img {
-    border-radius: 40px 10px;
+
+.timer h1 {
+    font-size: 50px;
 }
-.timer ul {
-   columns: 3;
-   width: 100%;
+
+.timer .timer1Text {
+    columns: 3;
+    width: 100%;
 }
-.timer ul li {
+
+.timer .timer1Text li {
     width: 75%;
     position: relative;
     list-style: none;
+    font-size: 18px;
     border-radius: 30px;
     margin-top: 20px;
     background-color: rgb(29, 24, 54);
     padding: 20px 30px;
-    /* width: 150px; */
 }
-.timer ul span {
+
+.timer .timer1Text span {
     font-size: 2rem;
     position: absolute;
     top: 10px;
     left: 10px;
 }
+
+/* .timer .text2 {} */
+
+.text2 ul {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.text2 ul li {
+    list-style: none;
+    font-size: 22px;
+    width: 100%;
+    text-align: start;
+    letter-spacing: 1px;
+    border-radius: 30px 30px 0px 0px;
+    padding: 15px 10px;
+    position: relative;
+    border: 2px dashed white;
+    border-width: 0px 2px 0px 2px;
+    background-color: rgb(30, 25, 58);
+    transition: 0.5s;
+}
+
+.text2 ul li:hover {
+    background: rgb(45, 38, 83);
+    color: whitesmoke;
+}
+
+.text2 i {
+    color: rgb(0, 255, 200);
+    margin: 0px 10px;
+}
+
+/*----------------------------- bonus  ------------------------------ */
+.bonus {
+    padding: 20px 70px;
+}
+
+.bonusText p {
+    font-size: 50px;
+}
+
+.bonusText {
+    width: 85%;
+}
+
+.bonusText i {
+    margin-left: 20px;
+    font-size: 70px;
+    color: rgb(0, 255, 200);
+}
+
+.bonusText .bonushead {
+    background: linear-gradient(45deg, dodgerblue, grey, green);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    width: max-content;
+    transform: translateX(15%);
+    font-weight: 700;
+    font-size: 150px;
+}
+
 
 
 
@@ -377,19 +449,51 @@ a {
     .centered {
         left: 0px !important;
     }
-    .timer img {
-        width: 80%;
-    }
-    .timer ul {
+    .timer .timer1Text {
         columns: 2;
     }
+    .bonusText {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: start !important;
+    }
+    .bonusText .bonushead {
+        font-size: 50px;
+    }
+    .bonusText i {
+        font-size: 35px;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 510px) {
     .tips .tip {
         width: 70%;
     }
-    .timer ul {
+
+    .timer .timer1Text {
         columns: 1;
+        margin: auto;
     }
 }
