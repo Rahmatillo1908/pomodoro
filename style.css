@@ -84,7 +84,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px 70px 0px;
+    padding: 40px 70px 30px;
     height: auto;
     min-height: 100vh;
 }
@@ -186,67 +186,114 @@ a {
     cursor: pointer;
     width: max-content;
 }
+
 .tipsHeader li:nth-child(1),
 .tip li:nth-child(1) {
     font-size: 25px;
     font-weight: 600;
     list-style: none;
 }
+
 .allTips {
     position: relative;
 }
+
 .allTips::after {
     content: "";
     position: absolute;
-    left: calc(50% - 5px) ;
-    top: 0px;
-    width: 10px;
+    left: calc(50% - 2px);
+    top: 20px;
+    width: 4px;
     height: 100%;
     background-color: white;
+    z-index: 4;
 }
 
 
 .tips .tip {
     background: rgb(29, 24, 54);
-    width: 30%;
+    width: 400px;
     height: auto;
     padding: 15px 30px;
-    position: relative;
     margin-top: 30px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    position: relative;
 }
 
 .tips .tipsRight {
-    margin-left: calc(100% - 35%);
+    margin-left: calc(100% - 450px);
 }
-.tipsRight::after,
-.tipsLeft::before {
-    content: "time";
-    position: absolute;
+
+.centered {
+    width: 80px;
+    height: 80px;
+    background-color: rgb(29, 24, 54);
     z-index: 5;
-    top: 0px;
-    left: -50%;
-    width: 60px;
-    height: 60px;
-    background-color: green;
-    display: flex;
+    position: relative;
+    left: calc(50% - 42px);
+    top: 110px;
     border-radius: 50%;
+    font-size: 30px;
+    color: #ffff;
+    display: flex;
     justify-content: center;
     align-items: center;
-}
-.tipsLeft::before {
-    left: 136%;
+    border: 4px solid white;
 }
 
 
 
+/*----------------------------- timer  ------------------------------ */
+
+.timer {
+    padding: 50px 50px 10px;
+    text-align: center;
+    width: 90%;
+    /* display: flex; */
+}
+.timer .timerImg img {
+    border-radius: 40px 10px;
+}
+.timer ul {
+   columns: 3;
+   width: 100%;
+}
+.timer ul li {
+    width: 75%;
+    position: relative;
+    list-style: none;
+    border-radius: 30px;
+    margin-top: 20px;
+    background-color: rgb(29, 24, 54);
+    padding: 20px 30px;
+    /* width: 150px; */
+}
+.timer ul span {
+    font-size: 2rem;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
 
 
 
 
+
+
+
+
+@media screen and (max-width: 1120px) {
+    .tips .tip {
+        width: 250px;
+    }
+
+    .tips .tipsRight {
+        margin-left: calc(100% - 300px);
+    }
+}
 
 
 
@@ -302,5 +349,47 @@ a {
     .homeButtons button {
         font-size: 16px;
         padding: 15px;
+    }
+
+    .tips {
+        width: 80%;
+    }
+
+    .tips .tipsHeader {
+        width: 80%;
+        margin: 0 auto;
+        padding: 10px 30px;
+    }
+
+    .tip {
+        left: 100px;
+        width: 400px;
+    }
+
+    .tips .tipsRight {
+        margin-left: 0px;
+    }
+
+    .allTips::after {
+        left: 40px;
+    }
+
+    .centered {
+        left: 0px !important;
+    }
+    .timer img {
+        width: 80%;
+    }
+    .timer ul {
+        columns: 2;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .tips .tip {
+        width: 70%;
+    }
+    .timer ul {
+        columns: 1;
     }
 }
