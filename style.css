@@ -353,9 +353,82 @@ a {
 
 
 
+.bonusCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.bonusCard {
+    position: relative;
+    width: 370px;
+    margin: 0 auto;
+    background-color: #181818;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.bonusCard img {
+    width: 100%;
+    border-radius: 30px 30px 0px 0px;
+    height: 350px;
+    transition: 0.2s;
+    transform: scale(0.9);
+}
+.bonusCard img:hover {
+    object-fit: cover;
+    transform: scale(1);
+}
+
+.bonusCard p {
+    padding: 2px 15px;
+    font-size: 17px;
+    color: #bbbbbb;
+}
+
+.bonusCard .bonusCardText img {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 70px;
+    height: 70px;
+}
 
 
+/*-------------------------- forms -----------------------------*/
 
+.forms {
+    display: flex;
+    width: 100%;
+    height: auto;
+    background: url("https://i.gifer.com/Q6al.gif") center/cover;
+}
+.forms .formsLeft {
+    flex: 1;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+}
+.formsLeft p {
+    margin-left: 50px;
+    position: relative;
+    color:antiquewhite;
+    font-size: 16px;
+}
+.formsLeft p::before {
+    position: absolute;
+    left: -30px;
+    content: url("https://static.tildacdn.com/tild6666-3163-4533-a461-393566373462/Check_badge_3.svg");
+}
+.forms .formsRight {
+    flex: 1;
+}
+.formsLeft .kafolat {
+    display: flex;
+    align-items: center;
+}
+.kafolat p {
+    font-size: 21px;
+    line-height: 23px;
+}
 
 @media screen and (max-width: 1120px) {
     .tips .tip {
@@ -365,15 +438,10 @@ a {
     .tips .tipsRight {
         margin-left: calc(100% - 300px);
     }
+    .bonusText .bonushead {
+        font-size: 90px;
+    }
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -382,9 +450,9 @@ a {
 
 @media screen and (max-width: 768px) {
     .navbar {
-        left: 0%;
+        left: 1%;
         padding: 0px 20px;
-        width: 90%;
+        width: 85%;
     }
 
     .navbar .navbarMenu {
@@ -440,9 +508,9 @@ a {
 
     .tips .tip {
         left: 100px;
-        width: 10%;
+        width: 70%;
         list-style: none;
-        padding: 5px 5px;
+        padding: 5px 7px;
     }
 
     .tips .tipsRight {
@@ -475,10 +543,23 @@ a {
         margin: auto;
     }
     .bonus .bonusText {
-        display: flex;
-        align-items: center;
-        text-align: start ;
-        font-size: 30px !important;
+        text-align: start !important;
+    }
+    .bonusText p , 
+    .bonusText i {
+        font-size: 20px;
+    }
+    .bonusText .bonushead {
+        margin: auto;
+        font-size: 2em;
+        transform: translateX(5%);
+    }
+    .bonusCard {
+        margin-top: 30px;
+    }
+    .bonusCard .bonusCardText img {
+        object-fit: contain;
+        height: auto;
     }
 }
 
@@ -511,5 +592,6 @@ a {
     .timer .timer1Text {
         columns: 1;
         margin: auto;
+        padding: 0px;
     }
 }
