@@ -401,7 +401,7 @@ a {
 
     .home {
         text-align: center;
-        padding-top: 100px;
+        padding: 100px 0px 10px;
         display: block;
     }
 
@@ -417,14 +417,19 @@ a {
     .homeImg {
         width: 100%;
     }
-
+    .homeButtons {
+        display: block;
+    }
     .homeButtons button {
+        margin: 10px 20px;
         font-size: 16px;
         padding: 15px;
     }
 
     .tips {
-        width: 80%;
+        width: 95%;
+        padding: 0px;
+        margin: auto;
     }
 
     .tips .tipsHeader {
@@ -433,9 +438,11 @@ a {
         padding: 10px 30px;
     }
 
-    .tip {
+    .tips .tip {
         left: 100px;
-        width: 400px;
+        width: 10%;
+        list-style: none;
+        padding: 5px 5px;
     }
 
     .tips .tipsRight {
@@ -449,20 +456,29 @@ a {
     .centered {
         left: 0px !important;
     }
+    .timer {
+        width: 100%;
+        padding: 0px ;
+    }
+    .timer h1 {
+        padding-top: 10px;
+        font-size: xx-large;
+    }
     .timer .timer1Text {
         columns: 2;
     }
-    .bonusText {
+    .text2 ul {
+        padding: 0px;
+    }
+    .text2 ul li {
+        width: 90%;
+        margin: auto;
+    }
+    .bonus .bonusText {
         display: flex;
         align-items: center;
-        flex-wrap: wrap;
-        text-align: start !important;
-    }
-    .bonusText .bonushead {
-        font-size: 50px;
-    }
-    .bonusText i {
-        font-size: 35px;
+        text-align: start ;
+        font-size: 30px !important;
     }
 }
 
@@ -489,7 +505,7 @@ a {
 
 @media screen and (max-width: 510px) {
     .tips .tip {
-        width: 70%;
+        width: 60%;
     }
 
     .timer .timer1Text {
