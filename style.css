@@ -2,12 +2,15 @@
 
 body {
     margin: 0;
-    padding: 0px 0px 40px;
     box-sizing: border-box;
     font-family: 'Space Grotesk', sans-serif;
     background: #282828;
     color: aliceblue;
     animation: body 1s ease-in;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 @keyframes body {
     0% {
@@ -58,6 +61,7 @@ a {
 .navbar .logo img {
     height: 100%;
     cursor: pointer;
+    transform: scale(1.5);
 }
 
 .navbar .navbarMenu {
@@ -93,9 +97,9 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px 70px 30px;
+    padding: 100px 70px 30px;
     height: auto;
-    min-height: 100vh;
+    max-height: 100vh;
 }
 
 .homeText {
@@ -526,25 +530,28 @@ a {
 
 .footer {
     display: flex;
-    justify-content: space-around;
-    padding: 50px 70px 20px;
+    margin-top: 40px;
+    justify-content: space-between;
+    padding: 100px 70px 60px;
+    background: #222222;
     align-items: center;
     gap: 30px;
     font-size: 19px;
 }
-.footer .kafolat {
+.footer .footerSocial {
     display: flex;
-    align-items: flex-start;
-    gap: 10px;
-    width: 40%;
+    justify-content: center;
+    gap: 50px;
 }
-.kafolat img {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
+.footerSocial i {
+    font-size: 24px;
+    border: 2px dashed #bbbbbb;
+    padding: 15px;
+    border-radius: 100px;
 }
-.footer .p {
-    width: 40%;
+.footerSocial i:hover {
+    transition: 0.3s;
+    transform: rotate(360deg);
 }
 .footer .proTech {
     width: 20%;
@@ -552,8 +559,8 @@ a {
     justify-content: center;
     align-items: center;
 }
-.proTech a {
-    font-size: 25px;
+.footer a {
+    font-size: 22px;
     color: white;
 }
 
@@ -643,10 +650,13 @@ a {
         width: 100%;
         filter: blur(4px);
     }
- 
+    .homeButtons {
+        margin: auto;
+    }
     .homeButtons button {
         margin: 10px 20px;
-        padding: 10px 24px;
+        margin: auto;
+        padding: 10px 30px;
     }
 
     .tips {
@@ -761,5 +771,16 @@ a {
     }
     .bonusCards .bonusCard {
         width: 90%;
+    }
+    .footer {
+        display: block;
+    }
+    .footer .footerSocial {
+        margin: auto;
+        width: 100%;
+    }
+    .footer .proTech {
+        margin: auto;
+        width: 100%;
     }
 }
