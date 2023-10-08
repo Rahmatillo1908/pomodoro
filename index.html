@@ -17,7 +17,7 @@
     <!----------------------- navbar -------------------------->
     <div class="navbar">
         <div class="logo">
-            <a href="#home"><img src="./imgs/logo.png" alt=""></a>
+            <a href="#"><img src="./imgs/logo.png" alt=""></a>
         </div>
         <div class="navbarMenu">
             <a href="#tips">Pomodoro usuli</a>
@@ -33,7 +33,7 @@
     </div>
     <!----------------------- home -------------------------->
 
-    <div id="home" class="home">
+    <div id="#" class="home">
         <div class="homeText">
             <h3>
                 Chet tilini o'zganish jarayonida dangasalikdan qutulishni
@@ -44,16 +44,14 @@
                 qutulib, samaradorlihingizni 2 barobarga oshirish!
             </h1>
             <div class="homeButtons">
-                <button class="btn1"><a href="#form">Ariza berish</a></button>
-                <button class="btn2"><a href="#timer" style="color: white;">Mahsulotni ko'rish <img
-                            src="./imgs/littlelogo.png" alt=""></a></button>
+                <button id="tips" class="btn2">5 qadamli usul <img src="./imgs/littlelogo.png" alt=""></button>
             </div>
         </div>
         <div class="homeImg">
         </div>
     </div>
     <!----------------------- tips -------------------------->
-    <div id="tips" class="tips">
+    <div class="tips">
         <ul class="tipsHeader">
             <li>
                 Qanday usul deysizmi?
@@ -125,13 +123,13 @@
             <div class="centered "><i class="fa-solid fa-arrow-rotate-right"></i></div>
             <ul class="tip tipsLeft">
                 <li>5-qadam. 3-4-qadamlar takrorlanadi</li>
-                <li>To'xtovsiz 4 ta pamidordan keyin katta tannaffus qilinadi,
+                <li id="timer">To'xtovsiz 4 ta pamidordan keyin katta tannaffus qilinadi,
                     ya'ni 1-2 soat dam olinadi chunki bundan miyyamiz ancha
                     toliqqan bo'ladi</li>
             </ul>
         </div>
     </div>
-    <div class="timer" id="timer">
+    <div class="timer">
         <h1>POMODORO USULI</h1>
         <ul class="timer1Text">
             <li>
@@ -205,7 +203,7 @@
                     Siz uchun tayyorlab qo'ygan maxsus taklifim bilan
                     tanishtirib chiqsam…
                 </li>
-                <li>
+                <li id="bonus">
                     <i class="fa-solid fa-check-double"></i>
                     Taymer sotib olasiz ba 3 ta qiymati yuqori bo'lgan
                     Bonuslarni qo'lga kiritasiz.
@@ -220,7 +218,7 @@
 
 
 
-    <div class="bonus" id="bonus">
+    <div class="bonus">
         <div class="bonusText">
             <p>Maxsus bonus va </p>
             <div class="bonushead">
@@ -275,56 +273,54 @@
                         sarflashingiz shart emas &#128527;</p>
                     <p>Qo'lingizgacha mahsulotlarni Bepulga yetkazib
                         beramiz. &#129309;</p>
-                    <p>Buyurtmangiz 3 ish kuni ichida yetkazib beriladi &#128763;</p>
+                        <p>Agar timer orqali pomodoro usulidan to'g'ri
+                            foydalanib samaradorligingizda hech qanday
+                            o'zgarish sezmasangiz bir og'iz so'zsiz pullaringiz
+                            100% qaytarib beriladi.
+                            Mahsulotlar qayrtarib olingan holda, pul
+                            qayratilib beriladi. &#128230;
+                        </p>
+                    <p id="form">Buyurtmangiz 3 ish kuni ichida yetkazib beriladi &#128763;</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <div id="form" class="forms">
+    <div class="forms">
         <div class="formsLeft">
-            <div class="kafolat">
-                <img src="./imgs/kafolat.png" alt="">
-                <div>
-                    <p>Agar timer orqali pomodoro usulidan to'g'ri
-                        foydalanib samaradorligingizda hech qanday
-                        o'zgarish sezmasangiz bir og'iz so'zsiz pullaringiz
-                        100% qaytarib beriladi.
-                    </p>
-                    <p>Mahsulotlar qayrtarib olingan holda, pul
-                        qayratilib beriladi.</p>
-                </div>
-            </div>
+
             <p> Sotib olish tartibi:
                 Ushbu formani to'ldirasiz, va u keyin siz avtomatik
-                tarzda telegram lichkamga yo'naltirvoradi &#128073;	</p>
+                tarzda telegram lichkamga yo'naltirvoradi &#128073; </p>
             <p>U yerda shaxsan men o'zim bilan bog'langan xolda,
                 savollaringiz bo'lsa savolaringizga javob olgan
                 holda mendan sotib olishingiz mumkin &#129333;</p>
-            <p>Keyin janatma uchun sizning Manzilingizni olib
-                qolaman shu zahotiyoq  &#127950;	</p>
+            <p>Keyin jo'natma uchun sizning Manzilingizni olib
+                qolaman shu zahotiyoq &#127950; </p>
             <p>
                 Lekin sizga bir yomon xabarim bor, agar hoziroq ro'yhatdan o'tib telegram orqali men bilan bog'lanib o'z
                 mahsulotingizni minimal summa evasiga band qilib qo'ymasangiz...
             </p>
-            <p>Taymer tugab qolish ehtimoli yuqori, chunki
-                taymerlar oz qolmoqda, agar taymer tugab qolsa
-                qolgan bonuslarni qo'ldan chiqarasiz, bonuslar
-                faqat taymer olganlarga beriladi!</p>
             <p>Agar hozir, hoziroq formani to'ldirib royhatdan
                 o'tmasangiz ushbu saytni yoq'otib qo'yish
                 ehtimolingiz yuqori
                 Harakatga kirishing, dangasalikdan qutuling!
                 Hurmat bilan
-                - Do'stingiz Saydazim</p>
+                - Do'stingiz Saydazim
+            </p>
+            <p>Taymer tugab qolish ehtimoli yuqori, chunki
+                taymerlar oz qolmoqda, agar taymer tugab qolsa
+                qolgan bonuslarni qo'ldan chiqarasiz, bonuslar
+                faqat taymer olganlarga beriladi!</p>
+
             <div class="summa">
                 <h5>Chegirma narxida ulgurib qoling!</h5>
                 <div class="chegirma">
                     <div>
-                        <h1><s>554 000 SO‘M</s></h1>
+                        <h1><s>346 000 SO‘M</s></h1>
                         <h2>277 000 SO‘M</h2>
                     </div>
-                    <div class="animation" >
+                    <div class="animation">
                         <img src="https://static.tildacdn.com/tild6166-3362-4637-b139-373636343861/Star_27.svg" alt="">
                         <h3>-25%</h3>
                     </div>
@@ -332,7 +328,47 @@
             </div>
         </div>
         <div class="formsRight">
+            <h1>Maxsulotni sotib olish uchun ro'yhatdan o'ting:</h1>
+            <form action="https://t.me/Saydaz1mm">
+                <div class="inputs">
+                    <input type="text" placeholder="Ismingiz">
+                    <input type="tel" placeholder="+99899 999 99 99">
+                    <input type="text" placeholder="@telegram manzilingiz">
+                </div>
+                <span>Iltimos, telegram manzilingizni "@" bilan yozing</span>
+                <div>
+                    <button>YUBORISH</button>
+                </div>
+                <div class="socials">
+                    <div class="social">
+                        <p> <i class="fa-brands fa-telegram"></i> Telegram:</p>
+                        <a href="https://t.me/pomodoro_uz">https://t.me/pomodoro_uz</a>
+                    </div>
+                    <div class="social">
+                        <p><i class="fa-brands fa-instagram"></i>Instagram:</p>
+                        <a href="https://instagram.com/pomodoro.uz">https://instagram.com/pomodoro.uz</a>
+                    </div>
+                    <div class="social">
+                        <p><i class="fa fa-phone"></i>Murojaat uchun:</p>
+                        <a href="">+998 91 740 30 55</a>
+                    </div>
+                </div>
+            </form>
 
+        </div>
+    </div>
+    <div class="footer">
+        <div class="kafolat">
+            <img src="./imgs/kafolat.png" alt="">
+            <div>
+             
+            </div>
+        </div>
+        <div class="p" >
+           
+        </div>
+        <div class="proTech">
+            <p><a href="https://proteach.uz/">Pro Tech</a></p>
         </div>
     </div>
 </body>
