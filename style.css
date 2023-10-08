@@ -397,29 +397,33 @@ a {
 
 .forms {
     display: flex;
-    width: 100%;
-    height: auto;
-    background: url("https://i.gifer.com/Q6al.gif") center/cover;
+    width: 90%;
+    margin: auto;
 }
 .forms .formsLeft {
     flex: 1;
     padding: 10px 20px;
     display: flex;
     flex-direction: column;
+    background: #181818;
+    border-radius: 40px;
 }
 .formsLeft p {
     margin-left: 50px;
     position: relative;
     color:antiquewhite;
-    font-size: 16px;
+    font-size: 17px;
 }
 .formsLeft p::before {
     position: absolute;
     left: -30px;
+    top: -5px;
+    font-size: 30px;
     content: url("https://static.tildacdn.com/tild6666-3163-4533-a461-393566373462/Check_badge_3.svg");
 }
 .forms .formsRight {
     flex: 1;
+    margin: auto;
 }
 .formsLeft .kafolat {
     display: flex;
@@ -429,6 +433,60 @@ a {
     font-size: 21px;
     line-height: 23px;
 }
+.formsLeft .summa {
+    width: 90%;
+    background-color: #000;
+    margin: auto;
+    border-radius: 30px;
+}
+.formsLeft .summa h5{
+    text-align: center;
+    font-size: 27px;
+    font-weight: 300;
+}
+.summa .chegirma {
+    display: flex;
+    padding: 0px 30px;
+    justify-content: space-between;
+    background: #383838;
+    border-radius: 0px 0px 30px 30px;
+    align-items: center;
+}
+.chegirma h1 {
+    color: #a3a3a3;
+    font-weight: 200;
+}
+.chegirma h2 {
+    font-size: 40px;
+}
+.chegirma .animation {
+    width: 40%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chegirma .animation img {
+    animation: cicrle 10s linear infinite;
+    width: 80%;
+}
+@keyframes cicrle {
+0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(360deg);
+}
+}
+
+.chegirma .animation h3 {
+    position: absolute;
+    font-size: 30px;
+    color: #222222;
+}
+
 
 @media screen and (max-width: 1120px) {
     .tips .tip {
@@ -534,6 +592,8 @@ a {
     }
     .timer .timer1Text {
         columns: 2;
+        width: 90%;
+        margin: auto;
     }
     .text2 ul {
         padding: 0px;
