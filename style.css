@@ -100,9 +100,8 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 100px 70px 30px;
+    padding: 120px 70px 30px;
     height: auto;
-    max-height: 100vh;
 }
 
 .homeText {
@@ -150,8 +149,6 @@ a {
     border: 1px solid rgba(255, 255, 255, 0.5);
     display: flex;
 }
-
-
 
 
 .homeButtons .btn2 img {
@@ -439,7 +436,7 @@ a {
 
 .forms .formsLeft {
     width: 50%;
-    padding: 10px 20px 40px;
+    padding: 5px 20px 40px;
     display: flex;
     flex-direction: column;
     background: #181818;
@@ -447,10 +444,10 @@ a {
 }
 
 .formsLeft p {
-    margin-left: 50px;
+    margin-left: 30px;
     position: relative;
     color: antiquewhite;
-    font-size: 17px;
+    font-size: 15px;
 }
 
 .formsLeft p::before {
@@ -672,22 +669,11 @@ a {
 @media screen and (max-width: 768px) {
     .navbar {
         display: none;
-        left: 1%;
-        padding: 0px 20px;
-        width: 85%;
-    }
-
-    .navbar .navbarMenu {
-        display: none;
-    }
-
-    .navbar .navbarForm {
-        display: none;
     }
     .home {
         position: relative;
         text-align: center;
-        padding: 100px 0px 10px;
+        padding:10px 0px;
         display: block;
     }
 
@@ -696,11 +682,12 @@ a {
         z-index: 1;
         width: 90%;
         margin: 0px auto;
-        font-size: 12px;
     }
-
+    .homeText h3 {
+        font-size: 15px;
+    }
     .homeText h1 {
-        font-size: 33px;
+        font-size: 30px;
     }
 
     .homeImg {
@@ -714,9 +701,10 @@ a {
 
     .homeButtons {
         display: block;
-        position: absolute;
-        top: -70px;
-        left: calc(100% - 80%);
+        margin: 0px auto;
+        /* position: absolute; */
+        /* top: -70px; */
+        /* left: calc(100% - 80%); */
     }
     .tips {
         width: 95%;
