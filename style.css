@@ -886,9 +886,9 @@ a {
     }
 
     .footer .proTech {
-        padding: 20px 20px 0px;
-        width: 80%;
-        justify-content: start;
-        align-items: end;
+        padding: 0px 20px 0px;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
     }
 }
