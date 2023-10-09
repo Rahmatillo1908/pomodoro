@@ -4,7 +4,7 @@ body {
     margin: 0;
     box-sizing: border-box;
     font-family: 'Space Grotesk', sans-serif;
-    background: #282828;
+    background: linear-gradient(45deg , rgb(104, 103, 103), #a5bbdc );
     color: aliceblue;
     animation: body 1s ease-in;
 }
@@ -12,16 +12,19 @@ body {
 html {
     scroll-behavior: smooth;
 }
+
 @keyframes body {
     0% {
         opacity: 0;
         margin-top: -200px;
     }
+
     100% {
         opacity: 1;
         margin-top: 0px;
     }
 }
+
 ::selection {
     color: dodgerblue;
     background: transparent;
@@ -119,7 +122,7 @@ a {
 .homeText h3 {
     font-size: 25px;
     line-height: 28px;
-    color: #a3a3a3;
+    color: #494848;
     text-transform: uppercase;
     font-weight: 200;
 }
@@ -286,14 +289,18 @@ a {
     left: 10px;
 }
 
-/* .timer .text2 {} */
+
+
+.text2 img {
+    width: 60%;
+    margin: 100px 0px;
+}
 
 .text2 ul {
-    margin-top: 100px;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 }
 
 .text2 ul li {
@@ -302,12 +309,8 @@ a {
     width: 100%;
     text-align: start;
     letter-spacing: 1px;
-    border-radius: 30px 30px 0px 0px;
     padding: 15px 10px;
     position: relative;
-    border: 2px dashed white;
-    border-width: 0px 2px 0px 2px;
-    background-color: rgb(30, 25, 58);
     transition: 0.5s;
 }
 
@@ -326,6 +329,35 @@ a {
     padding: 20px 70px;
 }
 
+.bonus .timerClock {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    height: 100%;
+}
+
+.timerClock .timerClockImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain ;  
+}
+
+.timerClock .timerClockImg {
+    height: 100%;
+    /* width: 500px; */
+}
+
+.timerClock .timerClockText {
+    /* width: 500px; */
+    height: auto;
+}
+
+.timerClockText .bg {
+    width: 100%;
+    height: 70%;
+    background: center/cover url("./imgs/timer2.jpg");
+}
+
 .bonusText p {
     font-size: 50px;
 }
@@ -341,7 +373,7 @@ a {
 }
 
 .bonusText .bonushead {
-    background: linear-gradient(45deg, dodgerblue, grey, green);
+    background: linear-gradient(45deg, dodgerblue, rgb(196, 195, 195), green);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -360,6 +392,7 @@ a {
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
 .bonusCard {
     position: relative;
     width: 370px;
@@ -367,6 +400,7 @@ a {
     background-color: #181818;
     border-radius: 30px;
 }
+
 .bonusCard img {
     width: 100%;
     border-radius: 30px 30px 0px 0px;
@@ -374,6 +408,7 @@ a {
     transition: 0.2s;
     transform: scale(0.9);
 }
+
 .bonusCard img:hover {
     object-fit: cover;
     transform: scale(1);
@@ -402,6 +437,7 @@ a {
     margin: auto;
     gap: 50px;
 }
+
 .forms .formsLeft {
     width: 50%;
     padding: 10px 20px 40px;
@@ -410,12 +446,14 @@ a {
     background: #181818;
     border-radius: 40px;
 }
+
 .formsLeft p {
     margin-left: 50px;
     position: relative;
-    color:antiquewhite;
+    color: antiquewhite;
     font-size: 17px;
 }
+
 .formsLeft p::before {
     position: absolute;
     left: -30px;
@@ -430,12 +468,14 @@ a {
     margin: auto;
     border-radius: 30px;
 }
-.formsLeft .summa h5{
+
+.formsLeft .summa h5 {
     text-align: center;
     font-size: 27px;
     font-weight: 300;
 }
-.summa .chegirma {
+
+.chegirma {
     display: flex;
     padding: 0px 20px;
     justify-content: space-between;
@@ -443,13 +483,16 @@ a {
     border-radius: 0px 0px 30px 30px;
     align-items: center;
 }
+
 .chegirma h1 {
     color: #a3a3a3;
     font-weight: 200;
 }
+
 .chegirma h2 {
     font-size: 40px;
 }
+
 .chegirma .animation {
     height: 100%;
     position: relative;
@@ -462,13 +505,15 @@ a {
     animation: cicrle 10s linear infinite;
     width: 120%;
 }
+
 @keyframes cicrle {
-0% {
-    transform: rotate(0deg);
-}
-100% {
-    transform: rotate(360deg);
-}
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .chegirma .animation h3 {
@@ -485,6 +530,7 @@ a {
     border-radius: 40px;
     margin: 0px auto;
 }
+
 .formsRight .inputs {
     display: flex;
     justify-content: center;
@@ -492,6 +538,7 @@ a {
     gap: 40px;
     padding-bottom: 30px;
 }
+
 .inputs input {
     padding: 15px 40px;
     background-color: transparent;
@@ -500,6 +547,7 @@ a {
     color: white;
     font-size: 22px;
 }
+
 .formsRight button {
     width: 100%;
     font-size: 24px;
@@ -510,21 +558,26 @@ a {
     outline: none;
     background: rgb(0, 255, 200);
 }
+
 .formsRight .socials {
     display: flex;
     flex-direction: column;
 }
+
 .formsRight .socials i {
     color: orchid;
     margin-right: 20px;
 }
+
 .socials .social {
     font-size: 24px;
     display: flex;
     flex-direction: column;
-}
-.social a {
     color: #a3a3a3;
+}
+
+.socials a {
+    color: #494848;
     font-size: 18px;
 }
 
@@ -538,27 +591,32 @@ a {
     gap: 30px;
     font-size: 19px;
 }
+
 .footer .footerSocial {
     display: flex;
     justify-content: center;
     gap: 50px;
 }
+
 .footerSocial i {
     font-size: 24px;
     border: 2px dashed #bbbbbb;
     padding: 15px;
     border-radius: 100px;
 }
+
 .footerSocial i:hover {
     transition: 0.3s;
     transform: rotate(360deg);
 }
+
 .footer .proTech {
     width: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .footer a {
     font-size: 22px;
     color: white;
@@ -582,12 +640,17 @@ a {
     .tips .tipsRight {
         margin-left: calc(100% - 300px);
     }
+
     .bonusText .bonushead {
         font-size: 90px;
+    }
+    .timerClock .timerClockText .bg {
+        height: 40%;
     }
     .forms {
         display: block;
     }
+
     .forms .formsLeft {
         padding: 40px 20px;
         width: 90%;
@@ -650,9 +713,11 @@ a {
         width: 100%;
         filter: blur(4px);
     }
+
     .homeButtons {
         margin: auto;
     }
+
     .homeButtons button {
         margin: 10px 20px;
         margin: auto;
@@ -689,44 +754,67 @@ a {
     .centered {
         left: 0px !important;
     }
+
     .timer {
         width: 100%;
-        padding: 0px ;
+        padding: 0px;
     }
+
     .timer h1 {
         padding-top: 10px;
         font-size: xx-large;
     }
+
     .timer .timer1Text {
         columns: 2;
         width: 90%;
         margin: auto;
     }
+
     .text2 ul {
         padding: 0px;
     }
+
     .text2 ul li {
         width: 90%;
         margin: auto;
     }
+
+    .bonus .timerClock {
+        display: block;
+    }
+    .timerClock .timerClockImg {
+        width: 100%;
+    }
+    .timerClock .timerClockText {
+        width: 100%;
+        height: auto;
+    }
     .bonus .bonusText {
         text-align: start !important;
     }
-    .bonusText p , 
+
+    .bonusText p,
     .bonusText i {
         font-size: 20px;
     }
+
     .bonusText .bonushead {
         margin: auto;
         font-size: 2em;
         transform: translateX(5%);
     }
+
     .bonusCard {
         margin-top: 30px;
     }
+
     .bonusCard .bonusCardText img {
         object-fit: contain;
         height: auto;
+    }
+    .socials .link {
+        display: none;
     }
 }
 
@@ -755,30 +843,37 @@ a {
     .tips .tip {
         width: 60%;
     }
+
     .home .homeImg {
         width: 80%;
         left: calc(100% - 90%);
-    } 
+    }
+
     .timer .timer1Text {
         columns: 1;
         margin: auto;
         padding: 0px;
     }
-    .bonus  {
+
+    .bonus {
         width: 90%;
         padding: 0px;
         margin: auto;
     }
+
     .bonusCards .bonusCard {
         width: 90%;
     }
+
     .footer {
         display: block;
     }
+
     .footer .footerSocial {
         margin: auto;
         width: 100%;
     }
+
     .footer .proTech {
         margin: auto;
         width: 100%;
