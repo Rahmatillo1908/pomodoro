@@ -125,7 +125,7 @@ a {
     color: #303030;
     text-transform: uppercase;
     font-weight: 500;
-    text-shadow: 1px 1px 3px rgb(0, 41, 128);
+    text-shadow: 1px 1px 3px  rgb(0, 255, 200);
 }
 
 .homeText h1 {
@@ -366,6 +366,8 @@ a {
 
 .bonusText {
     width: 85%;
+    color: #494848;
+    font-weight: 700;
 }
 
 .bonusText i {
@@ -375,7 +377,7 @@ a {
 }
 
 .bonusText .bonushead {
-    background: linear-gradient(45deg, dodgerblue, rgb(196, 195, 195), green);
+    background: linear-gradient(45deg, blue, rgb(136, 6, 86), green);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -384,11 +386,6 @@ a {
     font-weight: 700;
     font-size: 150px;
 }
-
-
-
-
-
 .bonusCards {
     display: flex;
     flex-wrap: wrap;
@@ -584,10 +581,12 @@ a {
 }
 
 .footer {
+    width: 100%;
+    height: auto;
     display: flex;
     margin-top: 40px;
-    justify-content: space-between;
-    padding: 100px 70px 60px;
+    justify-content: space-around;
+    padding: 50px 0px 60px;
     background: #222222;
     align-items: center;
     gap: 30px;
@@ -672,6 +671,7 @@ a {
 
 @media screen and (max-width: 768px) {
     .navbar {
+        display: none;
         left: 1%;
         padding: 0px 20px;
         width: 85%;
@@ -684,11 +684,6 @@ a {
     .navbar .navbarForm {
         display: none;
     }
-
-    .navbar .bar {
-        display: block;
-    }
-
     .home {
         position: relative;
         text-align: center;
@@ -699,7 +694,8 @@ a {
     .homeText {
         position: relative;
         z-index: 1;
-        width: 100%;
+        width: 90%;
+        margin: 0px auto;
         font-size: 12px;
     }
 
@@ -713,19 +709,15 @@ a {
         top: 0px;
         height: 80%;
         width: 100%;
-        filter: blur(4px);
+        filter: blur(8px);
     }
 
     .homeButtons {
-        margin: auto;
+        display: block;
+        position: absolute;
+        top: -70px;
+        left: calc(100% - 80%);
     }
-
-    .homeButtons button {
-        margin: 10px 20px;
-        margin: auto;
-        padding: 10px 30px;
-    }
-
     .tips {
         width: 95%;
         padding: 0px;
@@ -768,11 +760,14 @@ a {
     }
 
     .timer .timer1Text {
-        columns: 2;
+        columns: 2  ;
         width: 90%;
         margin: auto;
     }
-
+    .text2 img {
+        width: 85%;
+        margin: 40px 0px;
+    }
     .text2 ul {
         padding: 0px;
     }
@@ -851,12 +846,16 @@ a {
         left: calc(100% - 90%);
     }
 
-    .timer .timer1Text {
-        columns: 1;
-        margin: auto;
+     .timer .timer1Text {
+        columns: 1; 
         padding: 0px;
+        margin: 0px;
     }
-
+    .timer1Text li {
+        width: 100%;
+        left: 20px;
+        margin: 0px auto;
+    } 
     .bonus {
         width: 90%;
         padding: 0px;
@@ -869,6 +868,7 @@ a {
 
     .footer {
         display: block;
+        padding: 20px 0px;
     }
 
     .footer .footerSocial {
@@ -877,7 +877,9 @@ a {
     }
 
     .footer .proTech {
-        margin: auto;
-        width: 100%;
+        padding: 20px 20px 0px;
+        width: 80%;
+        justify-content: start;
+        align-items: end;
     }
 }
